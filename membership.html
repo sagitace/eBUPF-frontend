@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>BU Provident Fund</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    
+    </head>
+
+    <body>
+        <main class="container mt-2 ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-5 col-sm-12 col-md-8 card shadow-sm p-4 ">
+                    
+                    <!-- CAPSULE -->
+                    <div class="row  bu-low-gradient-x d-flex justify-content-center p-3 rounded-4">
+                        <div class="col-9 bg-light shadow-sm rounded-5 text-center shadow-sm" style="width: 20rem;">
+                            <div class="row d-flex my-1">
+                                <div class="col-3  d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" style="width: 2.5rem;" src="assets/BU-logo.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <h5 class="fs-5 fw-bolder my-3 bu-text-light-blue">BICOL <span class="bu-text-orange">UNIVERSITY</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CAPSULE -->
+
+                    <div class="row  justify-content-center pb-4 pt-3">
+                        <div class="col-lg-6 col-md-9 col-sm-9">
+                            <h5 class="text-center fw-bold ">Provident  Fund, Inc. Membership Form</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="text-center pb-3">
+                        Accomplish the first step in becoming a member!
+                    </div>
+
+                    <form action="#">
+                            <div class="row g-0">
+                                        <!-- One "tab" for each step in the form: -->
+                                <div class="tab g-0">
+                                    
+                                    <div class="row g-0 p-2">
+                                        <p class="m-0 fw-bold">Your Name</p>
+                                        <div class="row g-0 "> 
+                                            <div class="col  pe-1 pb-3">
+                                                <label for="lname">Lastname</label>
+                                                <input id="myForm" class="form-control validate"  name="lname">
+                                            </div>
+                                            <div class="col-1" style="width: 1rem;">
+                                                <h1 class="fw-bold m-0 text-center pt-4">,</h1>
+                                            </div>
+                                            <div class="col-5 pe-1">
+                                                <label for="lname">First name</label>
+                                                <input class="form-control mb-1 validate" name="fname">
+                                            </div>
+                                            <div class="col-2 ">
+                                                <div  class="d-none d-md-block"><label for="mname">Mid int.</label></div>
+                                                <div class="d-block d-md-none"><label for="mname" >M.I</label></div>
+                                                <input class="form-control w-100 validate" name="mname">
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 ">
+                                            <div class="col-12 pb-1 pb-3">
+                                                <label class="fw-bold" for="address">Address</label>
+                                                <input class="form-control validate" name="address">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-6 pe-1 pb-3">
+                                            <label class="fw-bold" for="birthday">Date of Birth</label>
+                                            <input class="form-control validate" type="date" name="birthday">
+                                        </div>
+                                        <div class="col-6 pb-1">
+                                            <label class="fw-bold" for="placeOfBirth">Place of Birth</label>
+                                            <input class="form-control validate" name="placeOfBirth">
+                                        </div>
+                                        <div class="col-6 pe-1 pb-3">
+                                            <label class="fw-bold" for="civilStatus">Civil Status</label>
+                                            <select class="form-select form-control validate" aria-label="Default select example"  id="maritalStatus" onchange="enableSpouseInput()">
+                                                <option selected disabled>...</option>
+                                                <option value="single">Single</option>
+                                                <option value="married">Married</option>
+                                                <option value="divorced">Divorced</option>
+                                                <option value="widowed">Widowed</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6 pb-1">
+                                            <label class="fw-bold" for="spouse">if Married, Name of Spouse</label>
+                                            <input class="form-control " name="spouse" id="spouseName" disabled>
+                                        </div>
+                                        <div class="col-6 pe-1">
+                                            <label class="fw-bold" for="address">Contact Number</label>
+                                            <input class="form-control validate" name="address">
+                                        </div>
+                                        <div class="col-6 pb-1">
+                                            <label class="fw-bold" for="sex">Sex</label>
+                                            <select class="form-select form-control validate" aria-label="Default select example">
+                                                <option selected disabled>...</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                                <option value="3">Prefer not to specify..</option>
+                                            </select>
+                                        </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="tab fade-in">Contact Info:
+                                    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+                                    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+                                </div>
+                                <div class="tab">Birthday:
+                                    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+                                    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+                                    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+                                </div>
+                                <div class="tab">Login Info:
+                                    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+                                    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+                                </div>
+
+                            </div>
+                        
+                            <div class=" d-flex justify-content-end py-5">
+                            
+                                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                <button class="btn bu-orange text-light fw-bold w-25" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                
+                            </div>
+                            <!-- Circles which indicates the steps of the form: -->
+                            <div class="text-center">
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                            </div>
+                        </form>
+                        
+                        <script>
+                            var currentTab = 0; // Current tab is set to be the first tab (0)
+                            showTab(currentTab); // Display the current tab
+                            
+                            function showTab(n) {
+                            // This function will display the specified tab of the form...
+                            var x = document.getElementsByClassName("tab");
+                            x[n].style.display = "block";
+                            //... and fix the Previous/Next buttons:
+                            if (n == 0) {
+                                document.getElementById("prevBtn").style.display = "none";
+                            } else {
+                                document.getElementById("prevBtn").style.display = "inline";
+                            }
+                            if (n == (x.length - 1)) {
+                                document.getElementById("nextBtn").innerHTML = "Submit";
+                            } else {
+                                document.getElementById("nextBtn").innerHTML = "Next";
+                            }
+                            //... and run a function that will display the correct step indicator:
+                            fixStepIndicator(n)
+                            }
+                            
+                            function nextPrev(n) {
+                            // This function will figure out which tab to display
+                            var x = document.getElementsByClassName("tab");
+                            // Exit the function if any field in the current tab is invalid:
+                            if (n == 1 && !validateForm()) return false;
+                            // Hide the current tab:
+                            x[currentTab].style.display = "none";
+                            // Increase or decrease the current tab by 1:
+                            currentTab = currentTab + n;
+                            // if you have reached the end of the form...
+                            if (currentTab >= x.length) {
+                                // ... the form gets submitted:
+                                document.getElementById("regForm").submit();
+                                return false;
+                            }
+                            // Otherwise, display the correct tab:
+                            showTab(currentTab);
+                            }
+                            
+                            function validateForm() {
+                                // This function deals with validation of the form fields
+                                var x, y, i, valid = true;
+                                x = document.getElementsByClassName("tab");
+                                y = x[currentTab].getElementsByClassName("validate");
+                                
+                                // A loop that checks every input field in the current tab:
+                                for (i = 0; i < y.length; i++) {
+                                  // If a field is empty...
+                                    if (y[i].value == "") {
+                                    // Add an "invalid" class to the field:
+                                    y[i].className += " invalid";
+                                    // And set the current valid status to false
+                                    valid = false;
+                                    
+                                    // Add the "shake" class to the invalid input
+                                    y[i].classList.add("shake");
+                                    setTimeout(function() {
+                                        y[i].classList.remove("shake");
+                                    }, 500);
+                                    }
+                                }
+                                
+                                // If the valid status is true, mark the step as finished and valid:
+                                if (valid) {
+                                    document.getElementsByClassName("step")[currentTab].className += " finish";
+                                }
+                                
+                                return valid; // return the valid status
+                                }
+                                
+                            
+                            function fixStepIndicator(n) {
+                            // This function removes the "active" class of all steps...
+                            var i, x = document.getElementsByClassName("step");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].className = x[i].className.replace(" active", "");
+                            }
+                            //... and adds the "active" class on the current step:
+                            x[n].className += " active";
+                            }
+
+
+                            function enableSpouseInput() {
+                                var maritalStatus = document.getElementById("maritalStatus");
+                                var spouseInput = document.getElementById("spouseName");
+                                
+                                if (maritalStatus.value === "married") {
+                                    spouseInput.disabled = false;
+                                } else {
+                                    spouseInput.disabled = true;
+                                    spouseInput.value = ""; // Clear the input value when disabled
+                                }
+                                }
+                                
+                        </script>
+                        
+        
+                </div>
+            </div>    
+        </main>
+    </body>
+
+
+</html>

@@ -1,0 +1,184 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+    /* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Apply Montserrat font to an element */
+body{
+font-family: 'Montserrat', sans-serif;
+background-color: #F7F9FC;
+}
+
+.card-hover:hover{
+    background-color: rgb(234, 238, 241) !important; 
+}
+
+
+/* COLORS COLORS COLORS COLORS COLORS COLORS COLORS */
+.bu-orange{
+    background-color: #FF6F19;
+}
+
+.bu-orange:hover{
+    background-color: #ed600e;
+}
+
+.bu-text-light-blue{
+    color: #0092D1; 
+}
+.bu-text-orange{
+    color: #FF6F19; 
+}
+
+.bu-gradient{
+    background: rgb(255,125,47);
+    background: linear-gradient(0deg, rgba(255,125,47,1) 30%, rgba(0,158,226,1) 100%);
+    position: relative;
+}
+
+.bu-low-gradient{
+    background: rgb(255,125,47);
+    background: linear-gradient(0deg, rgb(255, 158, 62) 30%, rgba(0,158,226,1) 100%);
+    position: relative;
+}
+
+
+.bu-low-gradient-x{
+    background: rgb(255,125,47);
+    background: linear-gradient(90deg, rgb(255, 158, 62) 30%, rgba(0,158,226,1) 100%);
+    position: relative;
+}
+
+/* COLORS COLORS COLORS COLORS COLORS COLORS COLORS */
+
+
+.grow-on-hover {
+    transition: transform 0.3s ease;
+}
+
+.grow-on-hover:hover {
+transform: scale(1.03);
+}
+
+
+
+
+.form-control{
+    background-color: #D9E4E9;
+    border: 0;
+}
+
+label{
+    font-size: 90%;
+}
+
+
+.fw-7{
+    font-size: 90%;
+}
+
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: soft-light;
+    opacity: 40%;
+}
+
+
+
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #009ee2;
+  }
+
+
+
+  .fade-in-left {
+    opacity: 0; /* Set initial opacity to 0 */
+    transform: translateX(-100%); /* Start from left (outside the viewport) */
+    animation: fade-in-from-left-animation 1s forwards; /* Apply the animation */
+  }
+  
+  @keyframes fade-in-from-left-animation {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateX(-100%); /* Start from left (outside the viewport) */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateX(0); /* End at the original position */
+    }
+  }
+  
+
+  .fade-in {
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fade-in-animation 0.5s forwards; /* Apply the animation */
+  }
+  
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+    }
+  }
+  
+
+
+
+/* shake animation for invalid forms */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    40%, 90% { transform: translateX(-5px); }
+    50%, 80% { transform: translateX(5px); }
+    60%, 50%, 70% { transform: translateX(-5px); }
+    50%, 60% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .shake {
+    animation: shake 0.5s;
+  }
+
+.invalid {
+  outline: 1.1px solid #ff7a7a;
+}
