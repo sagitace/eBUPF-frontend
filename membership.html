@@ -34,7 +34,7 @@
                     </div>
                     <!-- CAPSULE -->
 
-                    <div class="row  justify-content-center pb-4 pt-3">
+                    <div class="row justify-content-center pb-4 pt-3">
                         <div class="col-lg-6 col-md-9 col-sm-9">
                             <h5 class="text-center fw-bold ">Provident  Fund, Inc. Membership Form</h5>
                         </div>
@@ -44,10 +44,10 @@
                         Accomplish the first step in becoming a member!
                     </div>
 
-                    <form action="#">
+                    <form action="#" >
                             <div class="row g-0">
                                         <!-- One "tab" for each step in the form: -->
-                                <div class="tab g-0">
+                                <!-- <div class="tab g-0">
                                     
                                     <div class="row g-0 p-2">
                                         <p class="m-0 fw-bold">Your Name</p>
@@ -117,22 +117,207 @@
                                     </div>
                                     
 
-                                </div>
-                                <div class="tab fade-in">Contact Info:
-                                    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-                                    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-                                </div>
-                                <div class="tab">Birthday:
-                                    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-                                    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-                                    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
-                                </div>
-                                <div class="tab">Login Info:
-                                    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-                                    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+                                </div> -->
+                                <!-- <div class="tab fade-in">
+                                    <div class="row" >
+                                        <div class="col-6 mb-3">
+                                            <label class="fw-bold"  for="">College / Unit</label>
+                                            <select name="college" class="form-select form-control " >
+                                                
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="">Campus</label>
+                                            <select name="campus" class="form-select form-control " >
+                                                
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row  mb-3">
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="">Position</label>
+                                            <select name="position" class="form-select form-control " >
+                                                
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Monthly Salary</label>
+                                            <input class="form-control validate" type="number" name="salary">
+                                        </div>
+                                    </div>
+                                    <div class="row  mb-3">
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="tin">TIN number</label>
+                                            <input class="form-control validate" type="number" name="tin">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Employee Number</label>
+                                            <input class="form-control validate" type="number" name="employeeNumber">
+                                        </div>
+                                    </div>
+                                    <div class="row  mb-3">
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="appointmentStatus">Status of Appointment</label>
+                                            <select class="form-select form-control validate" aria-label="Default select example">
+                                                <option selected disabled>...</option>
+                                                <option value="1">Casual</option>
+                                                <option value="2">Permanent</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Date of Appointment in BU.</label>
+                                            <input class="form-control validate" type="date" name="appointment">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">   
+                                        <label class="fw-bold" for="salary">Fixed Monthly Contribution</label>
+                                        <input class="form-control validate" type="number" name="monthlyCont">
+                                    </div>
+                                        
+                                    
+                                </div> -->
+                                <div class="tab">
+
+                                    <div class="row border-bottom border-3 pb-3 mb-3">
+                                        <p class="fw-bold bu-text-orange">Provide Atleast One</p>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Name of Benificiary (1)</label>
+                                            <input class="form-control validate" type="number" name="beneficiary">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
+                                            <input class="form-control validate" type="date" name="birthday">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="appointmentStatus">Relationship to Applicant</label>
+                                            <select name="relationship" class="form-select form-control" aria-label="Default select example">
+                                                <option value="">Select Relationship</option>
+                                                <option value="spouse">Spouse</option>
+                                                <option value="child">Child</option>
+                                                <option value="parent">Parent</option>
+                                                <option value="sibling">Sibling</option>
+                                                <option value="grandparent">Grandparent</option>
+                                                <option value="grandchild">Grandchild</option>
+                                                <option value="friend">Friend</option>
+                                                <option value="relative">Relative</option>
+                                                <option value="partner">Partner</option>
+                                                <option value="colleague">Colleague</option>
+                                                <option value="other">Other</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border-bottom border-3 pb-3 mb-3">
+                                        
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Name of Benificiary (2)</label>
+                                            <input class="form-control" type="number" name="beneficiary">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
+                                            <input class="form-control" type="date" name="birthday">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="appointmentStatus">Relationship to Applicant</label>
+                                            <select name="relationship" class="form-select form-control" aria-label="Default select example">
+                                                <option selected disabled>...</option>
+                                                <option value="1">Casual</option>
+                                                <option value="2">Permanent</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border-bottom border-3 pb-3 mb-3">
+                                        
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Name of Benificiary (3)</label>
+                                            <input class="form-control" type="number" name="beneficiary">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
+                                            <input class="form-control" type="date" name="birthday">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="appointmentStatus">Relationship to Applicant</label>
+                                            <select name="relationship" class="form-select form-control" aria-label="Default select example">
+                                                <option selected disabled>...</option>
+                                                <option value="1">Casual</option>
+                                                <option value="2">Permanent</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border-bottom border-3 pb-3 mb-3">
+                                        
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Name of Benificiary (4)</label>
+                                            <input class="form-control" type="number" name="beneficiary">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
+                                            <input class="form-control" type="date" name="birthday">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="appointmentStatus">Relationship to Applicant</label>
+                                            <select name="relationship" class="form-select form-control" aria-label="Default select example">
+                                                <option selected disabled>...</option>
+                                                <option value="1">Casual</option>
+                                                <option value="2">Permanent</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border-bottom border-3 pb-3 mb-3">
+                                        
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Name of Benificiary (5)</label>
+                                            <input class="form-control" type="number" name="beneficiary">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
+                                            <input class="form-control" type="date" name="birthday">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold"  for="appointmentStatus">Relationship to Applicant</label>
+                                            <select name="relationship" class="form-select form-control" aria-label="Default select example">
+                                                <option selected disabled>...</option>
+                                                <option value="1">Casual</option>
+                                                <option value="2">Permanent</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    
+
                                 </div>
 
-                            </div>
+                                <div class="tab">Login Info:
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Fixed Monthly Contribution</label>
+                                            <input class="form-control" type="number" name="monthlyCont">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Fixed Monthly Contribution</label>
+                                            <input class="form-control" type="number" name="monthlyCont">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="fw-bold" for="salary">Fixed Monthly Contribution</label>
+                                            <input class="form-control" type="number" name="monthlyCont">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> 
                         
                             <div class=" d-flex justify-content-end py-5">
                             

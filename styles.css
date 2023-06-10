@@ -180,5 +180,6 @@ input.invalid {
   }
 
 .invalid {
-  outline: 1.1px solid #ff7a7a;
+  outline: 1.1px solid #ff7a7a !important;
+  
 }
