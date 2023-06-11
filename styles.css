@@ -20,6 +20,15 @@
     background-color: #D9E4E9;
 }
 
+.btn-outline-bu{
+    color: #0092D1;
+    outline: 3px solid #0092D1;
+}
+.btn-outline-bu:hover{
+    color: #ffffff;
+    background-color: #0092D1;
+}
+
 /* Apply Montserrat font to an element */
 
 body {
