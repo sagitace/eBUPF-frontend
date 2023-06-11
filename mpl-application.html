@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU Provident Fund</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <main class="container mt-2">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5 col-sm-12 col-md-8 card shadow-sm p-4">
+
+                <!-- LOGO -->
+                <div class="row-12 d-flex">
+                    <div class="col-8">
+                        <img src="assets/MPL-loanapp-logo.png" alt="Logo" height="57px">
+                    </div>
+                    <div class="col-4 d-flex align-items-end justify-content-end">
+                        <img src="assets/MPL-man.png" alt="Man" width="57px">
+                    </div>
+                </div>
+
+                <div class="tooltip-wrapper d-flex">
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="<p>A multi-purpose loan is a versatile financial product that provides borrowers with the flexibility to use the funds for various personal needs, such as debt consolidation, home improvements, education, or medical expenses.</p>"
+                        data-bs-html="true">
+                        <i class="bi bi-info-circle info-logo"></i>
+                    </button>
+                    <p class="info">More information about MPL</p>
+                </div>
+
+                <form action="#" method="POST">
+
+                    <p class="text1-design">Loan Details</p>
+
+                    <div class="form-group">
+                        <label for="loanAmount" class="text2-design">Amount Requested</label>
+                        <input type="number" class="form-control" id="loanAmount" name="loanAmount" min="50000" max="200000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loanTerm" class="text2-design">Years to pay</label>
+                        <input type="number" class="form-control" id="loanTerm" name="loanTerm" min="1" max="5" required>
+                    </div>
+
+                    <p class="text1-design pt-4">Co-Borrower</p>
+
+                    <div class="form-group">
+                        <label for="myCoBorrower" class="text2-design">Choose your co-borrower</label>
+                        <input type="text" class="form-control" id="myCoBorrower" name="myCoBorrower" required>
+                    </div>
+
+                    <p class="text1-design pt-4">Witnesses</p>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="myWitness1" name="myWitness1" placeholder="Select your first witness" required>
+                        <input type="text" class="form-control mt-2" id="myWitness2" name="myWitness2" placeholder="Select your second witness" required>
+                    </div>
+
+                    <div class="row-12 d-flex align-items-center justify-content-center">
+                        <p class="warning">Based on the information you have provided in your profile, we will use that as your personal details such as your name, age, and other relevant information.</p>
+                    </div>
+
+                    <button type="submit" class="btn bu-orange text-light fw-bold w-100">Proceed</button>
+
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Tooltip 
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+</body>
+
+</html>
