@@ -4,6 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+
+
+::-webkit-file-upload-button{
+    display: inline;
+    border: none;
+    border-radius: 5px ;
+    color: #ffffff;
+    background-color: #0092D1;
+    padding: 2%;
+}
+.form-upload{
+    border-radius: 5px;
+    width: 100%;
+    background-color: #D9E4E9;
+}
+
 /* Apply Montserrat font to an element */
 
 body {
@@ -51,6 +67,7 @@ body {
     background: linear-gradient(90deg, rgb(255, 158, 62) 30%, rgba(0, 158, 226, 1) 100%);
     position: relative;
 }
+
 
 
 /* COLORS COLORS COLORS COLORS COLORS COLORS COLORS */
@@ -197,6 +214,7 @@ input.invalid {
     }
 }
 
+/* FORM VALIDATIONS */
 .shake {
     animation: shake 0.5s;
 }
@@ -205,6 +223,9 @@ input.invalid {
     outline: 1.1px solid #ff7a7a !important;
     background-color: #ffdddd !important;
 }
+
+/* FORM VALIDATIONS */
+
 
 
 /* MPL loan Application */
