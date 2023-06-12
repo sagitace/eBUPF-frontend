@@ -192,6 +192,11 @@
             const witness1 = document.getElementById('myWitness1').value;
             const witness2 = document.getElementById('myWitness2').value;
 
+            if (!loanAmount || !loanTerm || !coBorrower || !witness1 || !witness2) {
+                alert('Please fill out all the required fields.');
+                return;
+            }
+
             // Display the values in the next step 
             document.getElementById('displayLoanAmount').textContent = loanAmount;
             document.getElementById('displayLoanTerm').textContent = loanTerm;
