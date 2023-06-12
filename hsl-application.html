@@ -36,7 +36,7 @@
                     <p class="info">More information about HSL</p>
                 </div>
 
-                <form action="#" method="POST">
+                <form action="#" method="POST" id="loanForm">
 
                     <p class="text1-design">Loan Details</p>
 
@@ -58,7 +58,6 @@
                     </div>
 
                     <p class="text1-design pt-4">Witnesses</p>
-
                     <div class="form-group">
                         <input type="text" class="form-control" id="myWitness1" name="myWitness1" placeholder="Select your first witness" required>
                         <input type="text" class="form-control mt-2" id="myWitness2" name="myWitness2" placeholder="Select your second witness" required>
@@ -68,10 +67,95 @@
                         <p class="warning">Based on the information you have provided in your profile, we will use that as your personal details such as your name, age, and other relevant information.</p>
                     </div>
 
-                    <button type="submit" class="btn bu-orange text-light fw-bold w-100">Proceed</button>
+                    <button type="button" class="btn bu-orange text-light fw-bold w-100" onclick="showNextStep()">Proceed</button>
 
                 </form>
 
+                <div id="nextStep" style="display: none;">
+                    <p class="h6 text-center fw-bold">Loan Application details</p>
+
+                    <div class="row">
+
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-3">Amount Requested</p>
+                            <span class="loan-input" id="displayLoanAmount"></span>
+                        </div>
+
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-3">Years To Pay</p>
+                            <span class="loan-input" id="displayLoanTerm"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-3">Co-Borrower</p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="co-borrower-dp" src="assets/hooman.png" alt="Man">
+                                </div>
+                                <div class="col-9">
+                                    <span class="text4-design" id="displayCoBorrower"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-3">Witnesses</p>
+                            <span class="text4-design" id="displayWitness1"></span>
+                            <br>
+                            <span class="text4-design" id="displayWitness2"></span>
+                        </div>
+
+                    </div>
+
+                    <p class="h6 text-center fw-bold mt-4">Your Personal Information</p>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-2">Name</p>
+                            <span class="text4-design">Dela Cruz, Juan M.</span>
+                        </div>
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-2">Unit</p>
+                            <span class="text4-design">BUCS</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-4">Address</p>
+                            <span class="text4-design">Bgy. 8 Bagumbayan, Legazpi City</span>
+                        </div>
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-4">Office</p>
+                            <span class="text4-design">CSIT</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-4">Date of Birth</p>
+                            <span class="text4-design">March 10, 1990</span>
+                        </div>
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-4">Tin</p>
+                            <span class="text4-design">000000</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="fw-bold text3-design mt-4">Contact Number</p>
+                            <span class="text4-design">09318946574</span>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn bu-orange text-light fw-bold w-100 mt-4" onclick="">Send Request to Co-Borrower</button>
+
+                </div>
             </div>
         </div>
     </main>
@@ -83,6 +167,26 @@
         var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+
+        function showNextStep() {
+            // Get form input values
+            const loanAmount = document.getElementById('loanAmount').value;
+            const loanTerm = document.getElementById('loanTerm').value;
+            const coBorrower = document.getElementById('myCoBorrower').value;
+            const witness1 = document.getElementById('myWitness1').value;
+            const witness2 = document.getElementById('myWitness2').value;
+
+            // Display the values in the next step 
+            document.getElementById('displayLoanAmount').textContent = loanAmount;
+            document.getElementById('displayLoanTerm').textContent = loanTerm;
+            document.getElementById('displayCoBorrower').textContent = coBorrower;
+            document.getElementById('displayWitness1').textContent = witness1;
+            document.getElementById('displayWitness2').textContent = witness2;
+
+            // Hide the form and show the next step
+            document.getElementById('loanForm').style.display = 'none';
+            document.getElementById('nextStep').style.display = 'block'
+        }
     </script>
 
 </body>
