@@ -289,7 +289,28 @@ input.invalid {
     color: #868686;
 }
 
+.warning2 {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+.orga {
+    font-size: 14px;
+    text-align: center;
+    color: #0D3546;
+}
+
 .co-borrower-dp {
     width: 50px;
     border-radius: 50%;
+}
+
+.check-mark {
+    margin-top: 20px;
+    width: 70px;
+}
+
+.bhome {
+    color: #00638D;
 }
