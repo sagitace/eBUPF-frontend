@@ -9,6 +9,8 @@
     <title>eBUPF</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="p-0 m-0 border-0">
 
@@ -62,49 +64,83 @@
 
           <!-- NAVBAR -->
           <div class=" col-lg-2  col-md-3  d-none  d-md-block  position-fixed h-100 " style="background-color: #ffffff;">
-            <div class="row d-flex border border-danger py-3">
+            <div class="row d-flex   py-3">
               <a href="#">
                 <img class="img-fluid" src="assets/bu-provident.svg" alt="" style="width: 14.5rem;"> 
               </a>
             </div>
 
             
-            <ul class="nav  flex-column mb-auto">
-              <li class="nav-item border py-1" >
-                <a href="#" class="nav-link link-dark border d-flex" aria-current="page">
-                  <svg class="me-3"  width="24" height="21" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.594 3.78039L24.4693 14.6557V22.2811C24.4693 23.0022 24.1829 23.6937 23.673 24.2036C23.1631 24.7135 22.4716 24.9999 21.7505 24.9999H5.43757C4.7165 24.9999 4.02495 24.7135 3.51508 24.2036C3.0052 23.6937 2.71875 23.0022 2.71875 22.2811V14.6557L13.594 3.78039ZM22.6568 2.34304V8.68697L19.0317 5.06187V2.34304C19.0317 2.10268 19.1272 1.87217 19.2971 1.70221C19.4671 1.53225 19.6976 1.43677 19.938 1.43677H21.7505C21.9909 1.43677 22.2214 1.53225 22.3914 1.70221C22.5613 1.87217 22.6568 2.10268 22.6568 2.34304Z" fill="#0092D1"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3138 0.53069C12.6537 0.190889 13.1146 0 13.5953 0C14.0759 0 14.5368 0.190889 14.8767 0.53069L26.9248 12.5769C27.0949 12.7471 27.1905 12.9779 27.1905 13.2185C27.1905 13.4592 27.0949 13.69 26.9248 13.8602C26.7546 14.0304 26.5238 14.126 26.2831 14.126C26.0425 14.126 25.8116 14.0304 25.6415 13.8602L13.5953 1.81216L1.54906 13.8602C1.37889 14.0304 1.14808 14.126 0.90742 14.126C0.666757 14.126 0.435951 14.0304 0.265777 13.8602C0.0956029 13.69 0 13.4592 0 13.2185C0 12.9779 0.0956029 12.7471 0.265777 12.5769L12.3138 0.53069Z" fill="#0092D1"/>
-                    </svg>
-                    
-                    <span class="fw-bold">Home</span>
-                  
-                </a>
+            <ul class="nav flex-column" style="margin-bottom: 0;">
+              
+              <li class="nav-items py-3 grow-on-hover ">
+                <div class="row g-0">
+                  <div class="col-3 text-center ">
+                    <img class="icon" src="icons/profile-holder.png" alt="">
+                  </div>
+                  <div class="col  d-flex align-items-center">
+                    <span class="fw-bold fs-7 text-secondary">Profile</span>
+                  </div>
+                </div>
               </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  Dashboard
-                </a>
+            
+              
+              <li class="nav-item  py-3 grow-on-hover">
+                <div class="row g-0">
+                  <div class="col-3 text-center ">
+                    <img src="icons/home.svg" alt="">
+                  </div>
+                  <div class="col ">
+                    <span class="fw-bold fs-7 text-secondary">Home</span>
+                  </div>
+                </div>
               </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                  Orders
-                </a>
+               
+              <li class="nav-item  py-3 grow-on-hover">
+                <div class="row g-0">
+                  <div class="col-3 text-center ">
+                    <i class="ps-1 fa-sharp fa-solid fa-peso-sign fa-lg" style="color: #ff6767;"></i>
+                  </div>
+                  <div class="col ">
+                    <span class="fw-bold fs-7  text-secondary">Loans</span>
+                  </div>
+                </div>
               </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-                  Products
-                </a>
+
+              <li class="nav-item  py-3 grow-on-hover">
+                <div class="row g-0">
+                  <div class="col-3 text-center ">
+                     <img class="mb-1 " src="icons/calculator.svg" alt="">
+                  </div>
+                  <div class="col-9  ">
+                    <span class=" fw-bold fs-7 text-secondary">Calculator</span>
+                  </div>
+                </div>
               </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  Customers
-                </a>
+
+              
+              <li class="nav-item  py-3 grow-on-hover">
+                <div class="row g-0">
+                  <div class="col-3 text-center ">
+                    <img class="mb-1" src="icons/receipt.svg" alt="">
+                  </div>
+                  <div class="col-9  ">
+                    <span class="fw-bold fs-7  text-secondary">Transactions</span>
+                  </div>
+                </div>
               </li>
+
+              <li class="nav-item  py-3 grow-on-hover">
+                <div class="row g-0">
+                  <div class="col-3 text-center ">
+                    <img class="mb-1" src="icons/envelope.svg" alt="">
+                  </div>
+                  <div class="col-9  ">
+                    <span class="fw-bold fs-7 text-secondary">Requests</span>
+                  </div>
+                </div>
+              </li>
+              
             </ul>
             
           </div>
