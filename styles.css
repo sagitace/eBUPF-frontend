@@ -11,13 +11,14 @@
     background-color: #0092D1;
     padding: 2%;
 }
-.bg-default{
+
+.bg-default {
     background-color: #f7f9fc;
 }
 
 .rounded-pill-top-start {
     border-radius: 9999px 9999px 0 9999px;
-  }
+}
 
 .form-upload {
     border-radius: 5px;
@@ -325,6 +326,11 @@ input.invalid {
 
 /* Homepage */
 
+#home {
+    height: 90vh;
+    width: 100%;
+}
+
 .navbar-brand img {
     height: 50px;
 }
@@ -338,7 +344,6 @@ input.invalid {
 
 .navbar {
     background-color: #ffffff;
-    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
     display: flex;
     align-items: center;
 }
@@ -400,7 +405,7 @@ input.invalid {
 
 .text6-design {
     color: white;
-    font-size: 13px;
+    font-size: 0.763rem;
     margin-right: 38px;
     font-weight: 300;
 }
@@ -419,8 +424,62 @@ input.invalid {
 }
 
 .text7-design {
+    padding-left: 55px;
+    padding-right: 55px;
     color: black;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.763rem;
     margin: 10px 20px;
+}
+
+#core-feature {
+    height: 25vh;
+    background-image: url("assets/core-feature-bg.png");
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    #core-feature {
+        margin-top: 380px;
+        height: 28vh;
+    }
+    .line {
+        border: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #core-feature {
+        margin-top: 380px;
+        height: 28vh;
+    }
+    .text8-design {
+        font-size: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #core-feature {
+        margin-top: 380px;
+        height: 48vh;
+    }
+}
+
+.line {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.icon2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.text8-design {
+    color: white;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
