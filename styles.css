@@ -16,6 +16,11 @@
     background-color: #f7f9fc;
 }
 
+.icon{
+    width: 2rem;
+    border-radius: 9999px;
+}
+
 .rounded-pill-top-start {
     border-radius: 9999px 9999px 0 9999px;
 }
@@ -107,6 +112,9 @@ label {
 
 .fw-7 {
     font-size: 90%;
+}
+.fs-7{
+    font-size: small;
 }
 
 .overlay-image {
