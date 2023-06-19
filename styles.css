@@ -16,7 +16,7 @@
     background-color: #f7f9fc;
 }
 
-.icon{
+.icon {
     width: 2rem;
     border-radius: 9999px;
 }
@@ -113,7 +113,8 @@ label {
 .fw-7 {
     font-size: 90%;
 }
-.fs-7{
+
+.fs-7 {
     font-size: small;
 }
 
@@ -334,12 +335,11 @@ input.invalid {
 
 /* Homepage */
 
+
 /* #home {
     height: 100vh;
     width: 100%;
 } */
-
-
 
 .navbar-brand img {
     height: 50px;
@@ -398,15 +398,12 @@ input.invalid {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    
     line-height: 44px;
-
     color: #FFFFFF;
-
     padding-left: 35px;
     margin-top: 75px;
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(176, 176, 176, 0.278);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.278);
 }
 
 .orange-tag {
@@ -456,38 +453,6 @@ input.invalid {
     width: 100%;
 }
 
-@media screen and (max-width: 991px) {
-    #core-feature {
-        margin-top: auto;
-        height: 28vh;
-    }
-    .line {
-        border: 1px solid white;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    #core-feature {
-        margin-top: auto;
-        height: 28vh;
-    }
-    .text8-design {
-        font-size: 0.1rem;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    #core-feature {
-        margin-top: auto;
-        padding-top: 1rem;
-        height: 20rem;
-    }
-    #core-feature-container{
-        scale: 0.9;
-    }
-    
-}
-
 .line {
     width: 100%;
     margin-top: 20px;
@@ -505,4 +470,73 @@ input.invalid {
     margin-top: 15px;
     margin-bottom: 20px;
     margin-left: 20px;
+}
+
+
+/* offers */
+
+.card-border {
+    border-radius: 10px;
+}
+
+.text9-design {
+    margin-top: -13px;
+}
+
+.text10-design {
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+/* Responsiveness */
+
+@media screen and (min-width: 992px) {
+    .card-border2 {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mpl-card {
+        margin-left: 190px;
+        margin-top: -15px;
+    }
+    .confirmation-card {
+        margin-left: 190px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #core-feature {
+        padding-top: 15px;
+        height: 28vh;
+    }
+    .line {
+        border: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #core-feature {
+        margin-top: auto;
+        height: 43vh;
+    }
+    .text8-design {
+        font-size: 1rem;
+    }
+    .card-border2 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #core-feature {
+        margin-top: -15px;
+        padding-top: 1rem;
+        height: 20rem;
+    }
+    #core-feature-container {
+        scale: 0.9;
+    }
 }
