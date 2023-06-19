@@ -334,10 +334,12 @@ input.invalid {
 
 /* Homepage */
 
-#home {
-    height: 90vh;
+/* #home {
+    height: 100vh;
     width: 100%;
-}
+} */
+
+
 
 .navbar-brand img {
     height: 50px;
@@ -392,11 +394,19 @@ input.invalid {
 }
 
 .text5-design {
-    color: white;
+    /* Bicol University Provident Fund Inc. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    
+    line-height: 44px;
+
+    color: #FFFFFF;
+
     padding-left: 35px;
     margin-top: 75px;
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(176, 176, 176, 0.278);
 }
 
 .orange-tag {
@@ -441,14 +451,14 @@ input.invalid {
 }
 
 #core-feature {
-    height: 25vh;
+    height: 17rem;
     background-image: url("assets/core-feature-bg.png");
     width: 100%;
 }
 
 @media screen and (max-width: 991px) {
     #core-feature {
-        margin-top: 380px;
+        margin-top: auto;
         height: 28vh;
     }
     .line {
@@ -458,7 +468,7 @@ input.invalid {
 
 @media screen and (max-width: 767px) {
     #core-feature {
-        margin-top: 380px;
+        margin-top: auto;
         height: 28vh;
     }
     .text8-design {
@@ -468,9 +478,14 @@ input.invalid {
 
 @media screen and (max-width: 575px) {
     #core-feature {
-        margin-top: 380px;
-        height: 48vh;
+        margin-top: auto;
+        padding-top: 1rem;
+        height: 20rem;
     }
+    #core-feature-container{
+        scale: 0.9;
+    }
+    
 }
 
 .line {
