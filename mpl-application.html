@@ -14,9 +14,10 @@
 </head>
 
 <body>
+    <div id="sidebar"></div>
     <main class="container mt-2" id="main-remove">
         <div class="row justify-content-center">
-            <div class="col-lg-5 col-sm-12 col-md-8 card shadow-sm p-4">
+            <div class="col-lg-4 col-sm-9 col-md-6 card shadow-sm p-4 mpl-card">
 
                 <!-- LOGO -->
                 <div class="row d-flex">
@@ -163,7 +164,7 @@
 
     <div id="newCardContainer" class="container mt-2" style="display: none;">
         <div class="row d-flex justify-content-center align-items-center" style="height:100vh;">
-            <div class="col-lg-3 col-sm-12 col-md-8 card shadow-sm p-4 h-60 ">
+            <div class="col-lg-4 col-sm-12 col-md-8 card shadow-sm p-4 h-60 confirmation-card">
                 <div class="row-12 d-flex justify-content-center align-items-center">
                     <img src="assets/check.png" alt="check" class="check-mark">
                 </div>
@@ -213,8 +214,13 @@
             document.getElementById("main-remove").style.display = "none";
             document.getElementById("newCardContainer").style.display = "block";
         }
-    </script>
 
+        fetch('member-nav.html')
+            .then(response => response.text())
+            .then(content => {
+                document.getElementById('sidebar').innerHTML = content;
+            });
+    </script>
 
 </body>
 
