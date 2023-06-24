@@ -501,6 +501,9 @@ input.invalid {
     .text11-move {
         padding-left: 66px;
     }
+    .request-to-coborrower {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 768px) {
