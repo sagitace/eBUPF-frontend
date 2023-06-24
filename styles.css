@@ -628,3 +628,19 @@ input.invalid {
     background-color: #aa3e00;
     color: white;
 }
+
+
+/* Requests to Co-Borrower */
+
+.search-container {
+    width: 95%;
+    height: 30px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    font-size: 16px;
+}
