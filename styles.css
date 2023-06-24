@@ -521,6 +521,9 @@ input.invalid {
     .line {
         border: 1px solid white;
     }
+    .transactions {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -574,4 +577,51 @@ input.invalid {
 
 .myline-height {
     line-height: 1.2;
+}
+
+.apply-btn {
+    background-color: #0092D1;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #00628c;
+    color: white;
+}
+
+.text15-design {
+    font-size: 0.65rem;
+}
+
+.text16-design {
+    font-size: 0.7rem;
+}
+
+.text17-design {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-btn {
+    background-color: #FF6F19;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.status-btn:hover {
+    background-color: #aa3e00;
+    color: white;
 }
