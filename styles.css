@@ -495,6 +495,12 @@ input.invalid {
     .card-border2 {
         margin-left: 100px;
     }
+    .transactions {
+        width: 20rem;
+    }
+    .text11-move {
+        padding-left: 66px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -539,4 +545,33 @@ input.invalid {
     #core-feature-container {
         scale: 0.9;
     }
+}
+
+
+/* Member dashboard */
+
+.text11-design {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0D3546;
+}
+
+.text12-design {
+    font-size: 0.8rem;
+    color: #0D3546;
+}
+
+.text13-design {
+    font-size: 0.659rem;
+    color: #0D3546;
+}
+
+.text14-design {
+    font-size: 1rem;
+    color: #0D3546;
+    font-weight: 600;
+}
+
+.myline-height {
+    line-height: 1.2;
 }
