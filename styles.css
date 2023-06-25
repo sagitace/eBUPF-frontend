@@ -502,7 +502,10 @@ input.invalid {
         padding-left: 66px;
     }
     .request-to-coborrower {
-        width: 70%;
+        width: 60%;
+    }
+    .loan-application-box {
+        margin-left: -80px;
     }
 }
 
@@ -551,6 +554,12 @@ input.invalid {
     #core-feature-container {
         scale: 0.9;
     }
+    .text11-design {
+        padding-left: 15px;
+    }
+    .text12-design {
+        padding-left: 15px;
+    }
 }
 
 
@@ -558,7 +567,6 @@ input.invalid {
 
 .text11-design {
     font-size: 0.8rem;
-    font-weight: 600;
     color: #0D3546;
 }
 
@@ -591,6 +599,7 @@ input.invalid {
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
+    max-height: 31px;
 }
 
 .apply-btn:hover {
@@ -633,14 +642,21 @@ input.invalid {
 /* Requests to Co-Borrower */
 
 .search-container {
-    width: 95%;
+    margin-top: 30px;
+    width: 90%;
     height: 30px;
 }
 
 .search-box {
     width: 100%;
     padding: 10px;
-    border: 1px solid #434343;
+    border: 1px solid #a7a7a7;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.request-to-coborrower {
+    border-radius: 10px;
+    border: 0.50px #bebebe solid;
+    background-color: white;
 }
