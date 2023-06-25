@@ -495,6 +495,15 @@ input.invalid {
     .card-border2 {
         margin-left: 100px;
     }
+    .transactions {
+        width: 20rem;
+    }
+    .text11-move {
+        padding-left: 66px;
+    }
+    .request-to-coborrower {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -514,6 +523,9 @@ input.invalid {
     }
     .line {
         border: 1px solid white;
+    }
+    .transactions {
+        margin-top: 20px;
     }
 }
 
@@ -539,4 +551,96 @@ input.invalid {
     #core-feature-container {
         scale: 0.9;
     }
+}
+
+
+/* Member dashboard */
+
+.text11-design {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0D3546;
+}
+
+.text12-design {
+    font-size: 0.8rem;
+    color: #0D3546;
+}
+
+.text13-design {
+    font-size: 0.659rem;
+    color: #0D3546;
+}
+
+.text14-design {
+    font-size: 1rem;
+    color: #0D3546;
+    font-weight: 600;
+}
+
+.myline-height {
+    line-height: 1.2;
+}
+
+.apply-btn {
+    background-color: #0092D1;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #00628c;
+    color: white;
+}
+
+.text15-design {
+    font-size: 0.65rem;
+}
+
+.text16-design {
+    font-size: 0.7rem;
+}
+
+.text17-design {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-btn {
+    background-color: #FF6F19;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.status-btn:hover {
+    background-color: #aa3e00;
+    color: white;
+}
+
+
+/* Requests to Co-Borrower */
+
+.search-container {
+    width: 95%;
+    height: 30px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    font-size: 16px;
 }
