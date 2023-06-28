@@ -45,7 +45,7 @@
                         <!-- One "tab" for each step in the form: -->
                         <div class="tab g-0">
 
-                            <!-- <div class="row g-0" >
+                            <div class="row g-0" >
                                         <p class="m-0 fw-bold">Your Name</p>
                                         <div class="row g-0 "> 
                                             <div class="col  pe-1 pb-3">
@@ -108,11 +108,11 @@
                                         
                                         
                                     </div>
-                                     -->
+                                    
 
                         </div>
                         <div class="tab fade-in">
-                            <!-- <div class="row" >
+                            <div class="row" >
                                         <div class="col-12">
                                             <p class="fw-bold m-0">Department</p>
                                         </div>
@@ -130,7 +130,7 @@
                                             <label  for="">Campus</label>
                                             <select name="campus" class="form-select form-control validate" >
                                                 <option value="casual" selected disabled >....</option>
-                                                <option value="">BUCS</option>
+                                                <option value="BUCS">BUCS</option>
                                                 
                                             </select>
                                         </div>
@@ -183,16 +183,16 @@
                                 <label for="salary">Fixed Monthly Contribution</label>
                                 <input class="form-control validate" type="number" name="monthlyCont">
                             </div>
-                                         -->
+                                        
 
                         </div>
                         <div class="tab">
 
-                            <!-- <div class="row border-bottom border-3 pb-3 mb-3">
+                            <div class="row border-bottom border-3 pb-3 mb-3">
                                         <p class="fw-bold bu-text-orange">Provide Atleast One</p>
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Name of Benificiary (1)</label>
-                                            <input class="form-control validate" type="number" name="beneficiary">
+                                            <input class="form-control validate" type="text" name="beneficiary">
                                         </div>
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
@@ -222,7 +222,7 @@
                                         
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Name of Benificiary (2)</label>
-                                            <input class="form-control" type="number" name="beneficiary">
+                                            <input class="form-control" type="text" name="beneficiary">
                                         </div>
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
@@ -243,7 +243,7 @@
                                         
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Name of Benificiary (3)</label>
-                                            <input class="form-control" type="number" name="beneficiary">
+                                            <input class="form-control" type="text" name="beneficiary">
                                         </div>
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
@@ -264,7 +264,7 @@
                                         
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Name of Benificiary (4)</label>
-                                            <input class="form-control" type="number" name="beneficiary">
+                                            <input class="form-control" type="text" name="beneficiary">
                                         </div>
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
@@ -285,7 +285,7 @@
                                         
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Name of Benificiary (5)</label>
-                                            <input class="form-control" type="number" name="beneficiary">
+                                            <input class="form-control" type="text" name="beneficiary">
                                         </div>
                                         <div class="col-6">
                                             <label class="fw-bold" for="salary">Benificiary's Date of Birth</label>
@@ -300,7 +300,7 @@
                                                 
                                             </select>
                                         </div>
-                                    </div> -->
+                                    </div>
                         </div>
 
                         <div class="tab">
@@ -338,10 +338,10 @@
 
                         </div>
 
-                        <div class=" d-flex justify-content-end py-3">
+                        <div class=" d-flex justify-content-end my-3">
 
-                            <button class="btn btn-secondary fw-bold me-1 px-4 text-light" type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
-                            <button class="btn bu-orange text-light fw-bold w-25" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            <button class="btn btn-secondary fw-bold me-1 text-light" type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                            <button style="width: 11rem;" class="btn bu-orange text-light fw-bold" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
 
                         </div>
                         <!-- Circles which indicates the steps of the form: -->
