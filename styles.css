@@ -103,7 +103,12 @@ body {
 
 .form-control {
     background-color: #D9E4E9;
-    border: 0;
+    
+}
+
+#search-input{
+    border-color: #363636;
+    background-color: #ffffff;
 }
 
 label {
@@ -288,6 +293,11 @@ input.invalid {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 5px;
+}
+
+.text3-1-design {
+    color: #00638D;
+    font-size: x-small;
 }
 
 .text4-design {
@@ -690,4 +700,8 @@ input.invalid {
 /* hidden overflow on x axis */
 .overflow-x-hidden{
     overflow-x: hidden;
+}
+
+.bg-bugreen{
+    background-color: #D9FFE4;
 }
