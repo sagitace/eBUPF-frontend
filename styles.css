@@ -506,6 +506,9 @@ input.invalid {
     .loan-application-box {
         margin-left: -80px;
     }
+    .app-status-box {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -542,6 +545,9 @@ input.invalid {
     .card-border2 {
         margin-top: 20px;
     }
+    .app-status-box {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -561,6 +567,9 @@ input.invalid {
     }
     .row .col .button {
         margin-bottom: 20px;
+    }
+    .app-status-box {
+        width: 100%;
     }
 }
 
@@ -667,7 +676,6 @@ input.invalid {
 /* Application Status */
 
 .app-status-box {
-    width: 50%;
     border-radius: 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     padding: 15px 25px;
