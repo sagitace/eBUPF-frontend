@@ -14,125 +14,127 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-md-3">
-            <!-- Sidebar -->
-            <div id="sidebar" class="sidebar"></div>
-        </div>
-        <div class="col-md-9 mt-5">
-            <div class="container d-flex flex-column align-items-center justify-content-center " style="margin-left: -100px;">
-                <div class="request-to-coborrower">
-                    <p class="fs-6 fw-bold" style="padding-top: 30px; padding-left: 20px;">Outgoing Requests</p>
-                    <div class=" search-container d-flex " style="padding-left: 20px;">
-                        <p class="p-1">Search</p>
-                        <input type="text" class="search-box" placeholder="Enter your search query">
-                    </div>
-
-                    <table class="table caption-top" style="margin-top: 20px; background-color: white;">
-
-                        <thead>
-                            <tr>
-
-                                <th scope="col" style="padding-left: 20px;">Loan</th>
-                                <th scope="col">Principal Borrower</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-
-                                <td>
-                                    <div style="padding-left: 15px;">
-                                        <p class="fs-7 fw-bold mb-0">Multi-Purpose Loan</p>
-                                        <p class="fs-7 mb-0">Php 50,000.00</p>
-                                        <p class="fs-7">April 2, 2023</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <img src="assets/hooman.png" alt="default picture" width="40px" class="rounded-circle">
-                                        <div class="ms-3">
-                                            <p class="mb-0 fs-7">Elly Buendia</p>
-                                            <p class="mb-0 fs-7">BUCS</p>
-                                            <p class="fs-7">ID: 12042</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <a href="#" type="button" class="btn bu-orange fs-7 text-light fw-bold" style="border-radius: 10px; width: 90px;">Accept</a>
-                                </td>
-                                <td>
-                                    <a href="#" type="button" class="btn btn-outline-primary fs-7 fw-bold" style="border-radius: 10px;width: 90px;">Deny</a>
-                                </td>
-                                <td>
-                                    <i class="bi bi-info-circle-fill" style="color: #00638D"></i>
-                                </td>
-                            </tr>
-                            <tr>
-
-                                <td>
-                                    <div style="padding-left: 15px;">
-                                        <p class="fs-7 fw-bold mb-0">Housing Loan</p>
-                                        <p class="fs-7 mb-0">Php 50,000.00</p>
-                                        <p class="fs-7">April 2, 2023</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <img src="assets/hooman.png" alt="default picture" width="40px" class="rounded-circle">
-                                        <div class="ms-3">
-                                            <p class="mb-0 fs-7">Elly Buendia</p>
-                                            <p class="mb-0 fs-7">BUCS</p>
-                                            <p class="fs-7">ID: 12042</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <a href="#" type="button" class="btn bu-orange fs-7 text-light fw-bold" style="border-radius: 10px; width: 90px;">Accept</a>
-                                </td>
-                                <td>
-                                    <a href="#" type="button" class="btn btn-outline-primary fs-7 fw-bold" style="border-radius: 10px;width: 90px;">Deny</a>
-                                </td>
-                                <td>
-                                    <i class="bi bi-info-circle-fill" style="color: #00638D"></i>
-                                </td>
-                            </tr>
-                            <tr>
-
-                                <td>
-                                    <div style="padding-left: 15px;">
-                                        <p class="fs-7 fw-bold mb-0">Multi-Purpose Loan</p>
-                                        <p class="fs-7 mb-0">Php 50,000.00</p>
-                                        <p class="fs-7">April 2, 2023</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <img src="assets/hooman.png" alt="default picture" width="40px" class="rounded-circle">
-                                        <div class="ms-3">
-                                            <p class="mb-0 fs-7">Elly Buendia</p>
-                                            <p class="mb-0 fs-7">BUCS</p>
-                                            <p class="fs-7">ID: 12042</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <a href="#" type="button" class="btn bu-orange fs-7 text-light fw-bold" style="border-radius: 10px; width: 90px;">Accept</a>
-                                </td>
-                                <td>
-                                    <a href="#" type="button" class="btn btn-outline-primary fs-7 fw-bold" style="border-radius: 10px;width: 90px;">Deny</a>
-                                </td>
-                                <td>
-                                    <i class="bi bi-info-circle-fill" style="color: #00638D"></i>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Sidebar -->
+                <div id="sidebar" class="sidebar"></div>
             </div>
+            <div class="col-md-9 mt-5">
+                <div class="container d-flex flex-column align-items-center justify-content-center " style="margin-left: -100px;">
+                    <div class="request-to-coborrower">
+                        <p class="fs-6 fw-bold" style="padding-top: 30px; padding-left: 20px;">Incoming Requests</p>
+                        <div class=" search-container d-flex " style="padding-left: 20px;">
+                            <p class="p-1">Search</p>
+                            <input type="text" class="search-box" placeholder="Enter your search query">
+                        </div>
 
+                        <table class="table caption-top" style="margin-top: 20px; background-color: white;">
+
+                            <thead>
+                                <tr>
+
+                                    <th scope="col" style="padding-left: 20px;">Loan</th>
+                                    <th scope="col">Principal Borrower</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>
+                                        <div style="padding-left: 15px;">
+                                            <p class="fs-7 fw-bold mb-0">Multi-Purpose Loan</p>
+                                            <p class="fs-7 mb-0">Php 50,000.00</p>
+                                            <p class="fs-7">April 2, 2023</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/hooman.png" alt="default picture" width="40px" class="rounded-circle">
+                                            <div class="ms-3">
+                                                <p class="mb-0 fs-7">Elly Buendia</p>
+                                                <p class="mb-0 fs-7">BUCS</p>
+                                                <p class="fs-7">ID: 12042</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" type="button" class="btn bu-orange fs-7 text-light fw-bold" style="border-radius: 10px; width: 90px;">Accept</a>
+                                    </td>
+                                    <td>
+                                        <a href="#" type="button" class="btn btn-outline-primary fs-7 fw-bold" style="border-radius: 10px;width: 90px;">Deny</a>
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-info-circle-fill" style="color: #00638D"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <div style="padding-left: 15px;">
+                                            <p class="fs-7 fw-bold mb-0">Housing Loan</p>
+                                            <p class="fs-7 mb-0">Php 50,000.00</p>
+                                            <p class="fs-7">April 2, 2023</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/hooman.png" alt="default picture" width="40px" class="rounded-circle">
+                                            <div class="ms-3">
+                                                <p class="mb-0 fs-7">Elly Buendia</p>
+                                                <p class="mb-0 fs-7">BUCS</p>
+                                                <p class="fs-7">ID: 12042</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" type="button" class="btn bu-orange fs-7 text-light fw-bold" style="border-radius: 10px; width: 90px;">Accept</a>
+                                    </td>
+                                    <td>
+                                        <a href="#" type="button" class="btn btn-outline-primary fs-7 fw-bold" style="border-radius: 10px;width: 90px;">Deny</a>
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-info-circle-fill" style="color: #00638D"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <div style="padding-left: 15px;">
+                                            <p class="fs-7 fw-bold mb-0">Multi-Purpose Loan</p>
+                                            <p class="fs-7 mb-0">Php 50,000.00</p>
+                                            <p class="fs-7">April 2, 2023</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/hooman.png" alt="default picture" width="40px" class="rounded-circle">
+                                            <div class="ms-3">
+                                                <p class="mb-0 fs-7">Elly Buendia</p>
+                                                <p class="mb-0 fs-7">BUCS</p>
+                                                <p class="fs-7">ID: 12042</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" type="button" class="btn bu-orange fs-7 text-light fw-bold" style="border-radius: 10px; width: 90px;">Accept</a>
+                                    </td>
+                                    <td>
+                                        <a href="#" type="button" class="btn btn-outline-primary fs-7 fw-bold" style="border-radius: 10px;width: 90px;">Deny</a>
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-info-circle-fill" style="color: #00638D"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 

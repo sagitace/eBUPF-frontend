@@ -14,165 +14,167 @@
 </head>
 
 <body>
-    <div id="sidebar"></div>
-    <main class="container mt-2" id="main-remove">
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-sm-9 col-md-6 card shadow-sm p-4 mpl-card">
+    <div class="container-fluid">
+        <div id="sidebar"></div>
+        <main class="container mt-2" id="main-remove">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-9 col-md-6 card shadow-sm p-4 mpl-card">
 
-                <!-- LOGO -->
-                <div class="row d-flex">
-                    <div class="col-8">
-                        <img src="assets/MPL-loanapp-logo.png" alt="Logo" height="57px">
+                    <!-- LOGO -->
+                    <div class="row d-flex">
+                        <div class="col-8">
+                            <img src="assets/MPL-loanapp-logo.png" alt="Logo" height="57px">
+                        </div>
+                        <div class="col-4 d-flex align-items-end justify-content-end">
+                            <img src="icons/MPL-mini.svg" alt="Mini Logo" width="57px">
+                        </div>
                     </div>
-                    <div class="col-4 d-flex align-items-end justify-content-end">
-                        <img src="icons/MPL-mini.svg" alt="Mini Logo" width="57px">
-                    </div>
-                </div>
 
-                <!-- Tooltip -->
-                <div class="tooltip-wrapper d-flex">
-                    <button type="button" id="infoButton" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="<p>A multi-purpose loan is a versatile financial product that provides borrowers with the flexibility to use the funds for various personal needs, such as debt consolidation, home improvements, education, or medical expenses.</p>"
-                        data-bs-html="true">
+                    <!-- Tooltip -->
+                    <div class="tooltip-wrapper d-flex">
+                        <button type="button" id="infoButton" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="<p>A multi-purpose loan is a versatile financial product that provides borrowers with the flexibility to use the funds for various personal needs, such as debt consolidation, home improvements, education, or medical expenses.</p>"
+                            data-bs-html="true">
                         <i class="bi bi-info-circle info-logo"></i>
                     </button>
-                    <p class="info">More information about MPL</p>
-                </div>
-
-                <form action="#" method="POST" id="loanForm">
-
-                    <p class="text1-design">Loan Details</p>
-
-                    <div class="form-group">
-                        <label for="loanAmount" class="text2-design">Amount Requested</label>
-                        <input type="number" class="form-control" id="loanAmount" name="loanAmount" min="50000" max="200000" required>
+                        <p class="info">More information about MPL</p>
                     </div>
 
-                    <div class="form-group">
-                        <label for="loanTerm" class="text2-design">Years to Pay</label>
-                        <input type="number" class="form-control" id="loanTerm" name="loanTerm" min="1" max="5" required>
-                    </div>
+                    <form action="#" method="POST" id="loanForm">
 
-                    <p class="text1-design pt-4">Co-Borrower</p>
+                        <p class="text1-design">Loan Details</p>
 
-                    <div class="form-group">
-                        <label for="myCoBorrower" class="text2-design">Choose Your Co-Borrower</label>
-                        <input type="text" class="form-control" id="myCoBorrower" name="myCoBorrower" required>
-                    </div>
-
-                    <p class="text1-design pt-4">Witnesses</p>
-
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="myWitness1" name="myWitness1" placeholder="Select your first witness" required>
-                        <input type="text" class="form-control mt-2" id="myWitness2" name="myWitness2" placeholder="Select your second witness" required>
-                    </div>
-
-                    <div class="row d-flex align-items-center justify-content-center">
-                        <p class="warning">Based on the information you have provided in your profile, we will use that as your personal details such as your name, age, and other relevant information.</p>
-                    </div>
-
-                    <button type="button" class="btn bu-orange text-light fw-bold w-100" onclick="showNextStep()">Proceed</button>
-
-                </form>
-
-                <div id="nextStep" style="display: none;">
-                    <p class="h6 text-center fw-bold">Loan Application details</p>
-
-                    <div class="row">
-
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-3">Amount Requested</p>
-                            <span class="loan-input" id="displayLoanAmount"></span>
+                        <div class="form-group">
+                            <label for="loanAmount" class="text2-design">Amount Requested</label>
+                            <input type="number" class="form-control" id="loanAmount" name="loanAmount" min="50000" max="200000" required>
                         </div>
 
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-3">Years To Pay</p>
-                            <span class="loan-input" id="displayLoanTerm"></span>
+                        <div class="form-group">
+                            <label for="loanTerm" class="text2-design">Years to Pay</label>
+                            <input type="number" class="form-control" id="loanTerm" name="loanTerm" min="1" max="5" required>
                         </div>
 
-                    </div>
+                        <p class="text1-design pt-4">Co-Borrower</p>
 
-                    <div class="row">
+                        <div class="form-group">
+                            <label for="myCoBorrower" class="text2-design">Choose Your Co-Borrower</label>
+                            <input type="text" class="form-control" id="myCoBorrower" name="myCoBorrower" required>
+                        </div>
 
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-3">Co-Borrower</p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img class="co-borrower-dp" src="assets/hooman.png" alt="Man">
-                                </div>
-                                <div class="col-9">
-                                    <span class="text4-design" id="displayCoBorrower"></span>
-                                </div>
+                        <p class="text1-design pt-4">Witnesses</p>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="myWitness1" name="myWitness1" placeholder="Select your first witness" required>
+                            <input type="text" class="form-control mt-2" id="myWitness2" name="myWitness2" placeholder="Select your second witness" required>
+                        </div>
+
+                        <div class="row d-flex align-items-center justify-content-center">
+                            <p class="warning">Based on the information you have provided in your profile, we will use that as your personal details such as your name, age, and other relevant information.</p>
+                        </div>
+
+                        <button type="button" class="btn bu-orange text-light fw-bold w-100" onclick="showNextStep()">Proceed</button>
+
+                    </form>
+
+                    <div id="nextStep" style="display: none;">
+                        <p class="h6 text-center fw-bold">Loan Application details</p>
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-3">Amount Requested</p>
+                                <span class="loan-input" id="displayLoanAmount"></span>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-3">Years To Pay</p>
+                                <span class="loan-input" id="displayLoanTerm"></span>
                             </div>
 
                         </div>
 
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-3">Witnesses</p>
-                            <span class="text4-design" id="displayWitness1"></span>
-                            <br>
-                            <span class="text4-design" id="displayWitness2"></span>
+                        <div class="row">
+
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-3">Co-Borrower</p>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="co-borrower-dp" src="assets/hooman.png" alt="Man">
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="text4-design" id="displayCoBorrower"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-3">Witnesses</p>
+                                <span class="text4-design" id="displayWitness1"></span>
+                                <br>
+                                <span class="text4-design" id="displayWitness2"></span>
+                            </div>
+
                         </div>
 
+                        <p class="h6 text-center fw-bold mt-4">Your Personal Information</p>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-2">Name</p>
+                                <span class="text4-design">Dela Cruz, Juan M.</span>
+                            </div>
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-2">Unit</p>
+                                <span class="text4-design">BUCS</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-4">Address</p>
+                                <span class="text4-design">Bgy. 8 Bagumbayan, Legazpi City</span>
+                            </div>
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-4">Office</p>
+                                <span class="text4-design">CSIT</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-4">Date of Birth</p>
+                                <span class="text4-design">March 10, 1990</span>
+                            </div>
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-4">Tin</p>
+                                <span class="text4-design">000000</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="fw-bold text3-design mt-4">Contact Number</p>
+                                <span class="text4-design">09318946574</span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn bu-orange text-light fw-bold w-100 mt-4" onclick="showNewCard()">Send Request to Co-Borrower</button>
                     </div>
-
-                    <p class="h6 text-center fw-bold mt-4">Your Personal Information</p>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-2">Name</p>
-                            <span class="text4-design">Dela Cruz, Juan M.</span>
-                        </div>
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-2">Unit</p>
-                            <span class="text4-design">BUCS</span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-4">Address</p>
-                            <span class="text4-design">Bgy. 8 Bagumbayan, Legazpi City</span>
-                        </div>
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-4">Office</p>
-                            <span class="text4-design">CSIT</span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-4">Date of Birth</p>
-                            <span class="text4-design">March 10, 1990</span>
-                        </div>
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-4">Tin</p>
-                            <span class="text4-design">000000</span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="fw-bold text3-design mt-4">Contact Number</p>
-                            <span class="text4-design">09318946574</span>
-                        </div>
-                    </div>
-                    <button type="button" class="btn bu-orange text-light fw-bold w-100 mt-4" onclick="showNewCard()">Send Request to Co-Borrower</button>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <div id="newCardContainer" class="container mt-2" style="display: none;">
-        <div class="row d-flex justify-content-center align-items-center" style="height:100vh;">
-            <div class="col-lg-4 col-sm-12 col-md-8 card shadow-sm p-4 h-60 confirmation-card">
-                <div class="row-12 d-flex justify-content-center align-items-center">
-                    <img src="assets/check.png" alt="check" class="check-mark">
+        <div id="newCardContainer" class="container mt-2" style="display: none;">
+            <div class="row d-flex justify-content-center align-items-center" style="height:100vh;">
+                <div class="col-lg-4 col-sm-12 col-md-8 card shadow-sm p-4 h-60 confirmation-card">
+                    <div class="row-12 d-flex justify-content-center align-items-center">
+                        <img src="assets/check.png" alt="check" class="check-mark">
+                    </div>
+                    <p class="fw-bold text-center mt-4">Request Sent!</p>
+                    <p class="warning2 mt4">Congrats! Form completed! Co-borrower requested. Once they accept, a printable file will be auto-generated with all info filled. Just print and sign. We'll notify you when it's ready. Thanks for using our service!</p>
+                    <p class="mt4 orga fw-normal">BU PROVIDENT FUND INC.</p>
+                    <button type="button" class="btn bu-orange text-light fw-bold w-100 mt-2">Go to Request</button>
+                    <button type="button" class="btn bhome fw-bold text-center mt-2">Back to Home</button>
                 </div>
-                <p class="fw-bold text-center mt-4">Request Sent!</p>
-                <p class="warning2 mt4">Congrats! Form completed! Co-borrower requested. Once they accept, a printable file will be auto-generated with all info filled. Just print and sign. We'll notify you when it's ready. Thanks for using our service!</p>
-                <p class="mt4 orga fw-normal">BU PROVIDENT FUND INC.</p>
-                <button type="button" class="btn bu-orange text-light fw-bold w-100 mt-2">Go to Request</button>
-                <button type="button" class="btn bhome fw-bold text-center mt-2">Back to Home</button>
             </div>
         </div>
     </div>

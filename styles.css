@@ -425,11 +425,12 @@ input.invalid {
     font-weight: 300;
 }
 
-.row-12 .button {
+.row .col .button {
     background-color: #FF6F19;
     border-radius: 20px;
     margin-right: 40px;
     margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 16px;
     padding-left: 25px;
     padding-right: 25px;
@@ -439,8 +440,6 @@ input.invalid {
 }
 
 .text7-design {
-    padding-left: 55px;
-    padding-right: 55px;
     color: black;
     text-align: center;
     font-size: 0.763rem;
@@ -560,6 +559,9 @@ input.invalid {
     .text12-design {
         padding-left: 15px;
     }
+    .row .col .button {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -625,9 +627,9 @@ input.invalid {
     color: white;
     font-weight: 600;
     font-size: 0.8rem;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 20px;
     margin-right: 20px;
     cursor: pointer;
@@ -659,4 +661,19 @@ input.invalid {
     border-radius: 10px;
     border: 0.50px #bebebe solid;
     background-color: white;
+}
+
+
+/* Application Status */
+
+.app-status-box {
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 15px 25px;
+}
+
+.status-box {
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
