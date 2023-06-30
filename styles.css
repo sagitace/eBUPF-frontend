@@ -36,7 +36,6 @@
     outline: 3px solid #0092D1;
 }
 
-
 .btn-outline-bu:hover {
     color: #ffffff;
     background-color: #0092D1;
@@ -51,6 +50,7 @@
     color: #ffffff;
     background-color: rgb(3, 122, 173);
 }
+
 
 /* Apply Montserrat font to an element */
 
@@ -119,10 +119,9 @@ body {
 
 .form-control {
     background-color: #D9E4E9;
-    
 }
 
-.search-input{
+.search-input {
     border-color: #363636;
     background-color: #ffffff !important;
 }
@@ -712,12 +711,19 @@ input.invalid {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
+.status-box-dennied {
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: #ff6666d2;
+}
+
 
 /* hidden overflow on x axis */
-.overflow-x-hidden{
+
+.overflow-x-hidden {
     overflow-x: hidden;
 }
 
-.bg-bugreen{
+.bg-bugreen {
     background-color: #D9FFE4;
 }
