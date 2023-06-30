@@ -36,11 +36,21 @@
     outline: 3px solid #0092D1;
 }
 
+
 .btn-outline-bu:hover {
     color: #ffffff;
     background-color: #0092D1;
 }
 
+.btn-outline-bu2 {
+    color: #00638D;
+    outline: 2px solid #00638D;
+}
+
+.btn-outline-bu2:hover {
+    color: #ffffff;
+    background-color: rgb(3, 122, 173);
+}
 
 /* Apply Montserrat font to an element */
 
@@ -106,9 +116,9 @@ body {
     
 }
 
-#search-input{
+.search-input{
     border-color: #363636;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
 }
 
 label {
@@ -511,7 +521,7 @@ input.invalid {
         padding-left: 66px;
     }
     .request-to-coborrower {
-        width: 60%;
+        width: 80%;
     }
     .loan-application-box {
         margin-left: -80px;
