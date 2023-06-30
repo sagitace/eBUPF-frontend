@@ -81,6 +81,9 @@ body {
 .bu-text-orange {
     color: #FF6F19;
 }
+.border-dotted-top {
+    border-top: 1px dotted black;
+  }
 
 .bu-gradient {
     background: rgb(255, 125, 47);
@@ -105,6 +108,9 @@ body {
 
 .grow-on-hover {
     transition: transform 0.3s ease;
+}
+.bg-success-bu{
+    background-color: #73EDC1 !important;
 }
 
 .grow-on-hover:hover {
