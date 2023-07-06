@@ -12,7 +12,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 		
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 		<link rel="stylesheet" href="css/admin-style.css">
     <link rel="stylesheet" href="../styles.css">
 
@@ -39,18 +41,21 @@
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				
-        <ul class="list-unstyled components mb-5 ">
-          <li>
-            <a href="#">BUPF Staff 1</a>
+        <ul class="list-unstyled components mb-5 " style="scale: 0.95;">
+          <li >
+            
+            <a href="#"><img src="../icons/profile-holder.png" class="rounded-5 me-2" style="width: 1.5rem;">
+              Mary Jane Selo</a>
+            
           </li>
           <li class="active">
-            <a href="#"> Dashboard</a>
+            <a href="#"><img src="../icons/admin-icons/dashboard.svg" style="width: 1rem;"  class="me-2"> Dashboard</a>
           </li>
           <li>
-              <a href="#">Members</a>
+              <a href="#"><img src="../icons/admin-icons/members.svg" style="width: 1.2rem;"  class="me-2">Members</a>
           </li>
           <li>
-            <a href="#"> Ledgers</a>
+            <a href="#"><img src="../icons/admin-icons/ledgers.svg" style="width: 1rem;"  class="me-2"> Ledgers</a>
           </li>
           <li>
             <div class="accordion accordion-flush" id="accordionFlushExample" >
@@ -59,9 +64,9 @@
                 <p class="accordion-header fw-7">
                   <button class="accordion-button text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     
-
-                    </span>
-                      <p class="fw-7 my-auto" style="padding-left: 10px;">Loans</p>
+                    <img src="../icons/admin-icons/pesos.svg" style="width: 1.1rem; margin-left: 10px;">
+                    
+                      <p class="fw-7 my-auto ms-2">Loans</p>
                   </button>
                 </p>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -85,8 +90,8 @@
               <div class="accordion-item">
                 <p class="accordion-header fw-7">
                   <button class="accordion-button text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-
-                      <p class="fw-7 my-auto" style="padding-left: 10px;">Loan Applications</p>
+                    <img src="../icons/admin-icons/loan-applications.svg" style="width: 1.3rem; margin-left: 5px;">
+                      <p class="fw-7 my-auto ms-2">Loan Applications</p>
                   </button>
                 </p>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -106,10 +111,10 @@
 
           </li>
           <li>
-            <a href="#"> Remittances</a>
+            <a href="#"><img src="../icons/admin-icons/remittances.svg" style="width: 1rem;" class="me-2"> Remittances</a>
           </li>
           <li>
-            <a href="#"></span> Receivables</a>
+            <a href="#"><img src="../icons/admin-icons/receivables.svg" style="width: 1rem;"  class="me-2"> Receivables</a>
           </li>
 
         </ul>
