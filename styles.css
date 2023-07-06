@@ -81,9 +81,10 @@ body {
 .bu-text-orange {
     color: #FF6F19;
 }
+
 .border-dotted-top {
     border-top: 1px dotted black;
-  }
+}
 
 .bu-gradient {
     background: rgb(255, 125, 47);
@@ -109,7 +110,8 @@ body {
 .grow-on-hover {
     transition: transform 0.3s ease;
 }
-.bg-success-bu{
+
+.bg-success-bu {
     background-color: #73EDC1 !important;
 }
 
@@ -726,4 +728,102 @@ input.invalid {
 
 .bg-bugreen {
     background-color: #D9FFE4;
+}
+
+
+/* Personal Ledger Admin side */
+
+.pl-newloan {
+    background-color: #0092D1;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-dpdloan {
+    border-radius: 20px;
+    font-size: 0.9rem;
+    padding: 5px 20px;
+}
+
+.pl-head {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.pl-50 {
+    font-size: 0.7rem;
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: #ff8b8b;
+    padding: 0px 5px;
+    margin-bottom: 25px;
+}
+
+.pl-details {
+    border-radius: 10px;
+    padding: 15px 15px 0px 15px;
+    background-color: white;
+    border: 1px solid #A1A1A1;
+}
+
+.pl-text-size {
+    font-size: 0.8rem;
+}
+
+.pl-table>thead>tr:first-child>th {
+    border-bottom: none;
+    text-align: center;
+}
+
+thead tr:first-child th:first-child {
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.pl-table>thead>tr:last-child>th {
+    vertical-align: middle;
+}
+
+.table-container {
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.responsive-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+@media (max-width: 768px) {
+    .responsive-table th,
+    .responsive-table td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.pl-tr td:first-child {
+    font-weight: 600;
+}
+
+.pl-tr-last {
+    font-weight: 700;
+}
+
+.pl-tr td,
+.pl-tr th {
+    font-size: 0.8rem;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: #E6EEF1;
+}
+
+.pl-table tbody td:not(:first-child) {
+    font-size: 0.7rem;
 }
