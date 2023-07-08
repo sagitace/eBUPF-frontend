@@ -605,6 +605,15 @@ input.invalid {
     }
 }
 
+@media (min-width: 575px) {
+    .filter-group {
+        display: flex;
+        gap: 2px;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+}
+
 
 /* Member dashboard */
 
@@ -888,4 +897,18 @@ tbody tr:nth-child(odd) td {
     min-width: 900px;
     height: 500px;
     overflow-y: auto;
+}
+
+
+/* Admin Members */
+
+#applyFilterBtn {
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0 25px;
+    border-radius: 20px;
+    color: black;
 }
