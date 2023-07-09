@@ -857,6 +857,11 @@ tbody tr:nth-child(odd) td {
     height: 70px;
 }
 
+.membership-app-header1-mpl {
+    width: 280px;
+    height: 70px;
+}
+
 .membership-app-header2 {
     border: 1px solid #BDBDBD;
     width: 200px;
