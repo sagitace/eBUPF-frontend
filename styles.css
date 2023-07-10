@@ -918,7 +918,7 @@ tbody tr:nth-child(odd) td {
     color: black;
 }
 
-.form-group::after {
+.fg-admin::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -931,7 +931,7 @@ tbody tr:nth-child(odd) td {
     border-top: 5px solid #000;
 }
 
-.form-group {
+.fg-admin {
     margin-bottom: 5px;
 }
 
@@ -1041,4 +1041,44 @@ tbody tr:nth-child(odd) td {
     font-weight: 600;
     padding: 4px 20px;
     margin-bottom: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 420px;
+}
+
+.admin-custom-select {
+    background-color: #D9E4E9;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/* Application details */
+
+.application-details-box {
+    border: #868686 1px solid;
+    border-radius: 15px;
 }
