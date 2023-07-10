@@ -41,8 +41,44 @@
                     </div>
                 </div>
             </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content p-4">
+                    <span class="text-center fs-6 fw-bold">Add Status</span>
+                    <div>
+                        <span class="fs-7">Loan ID</span> <br>
+                        <span style="color: #0092D1" class="fw-bold">102030</span>
+                        <div class="row">
+                            <div class="col-7">
+                                <span class="fw-bold fs-7">Juan Dela Cruz Jr.</span> <br> <span class="fs-7">BUCS</span>
+                            </div>
+                            <div class="col-5 d-flex justify-content-end">
+                                <span class="fs-7">200,000.00</span>
+                            </div>
+                            <span class="fs-7">04-23-2023</span>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <select id="statusDropdown" class="form-select admin-custom-select">
+                            <option value="" disabled selected>Status</option>
+                            <option value="Staff">Staff</option>
+                            <option value="LoanAnalyst">Loan Analyst</option>
+                            <option value="ExeDirector">Executive Director</option>
+                            <option value="Check">Check</option>
+                          </select>
+                    </div>
+                    <div class="mt-2">
+                        <input type="date" id="dateInput" class="form-control" />
+                    </div>
+                    <div class="mt-2">
+                        <textarea id="remarksInput" class="form-control" rows="3" placeholder="Remarks"></textarea>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-end">
+                        <button type="button" class="btn bu-orange p-1 text-white fs-7">Confirm</button>
+                    </div>
+                </div>
+            </div>
             <div class="filter-group gap-2 mt-4">
-                <div class="form-group" style="width: 150px; position: relative;">
+                <div class="form-group fg-admin" style="width: 150px; position: relative;">
                     <select id="monthSelect" class="form-control bg-white border-0 fw-semibold">
                         <option value="All">Month</option>
                         <option value="">January</option>
@@ -60,12 +96,12 @@
 
                     </select>
                 </div>
-                <div class="form-group" style="width: 150px; position: relative;">
+                <div class="form-group fg-admin" style="width: 150px; position: relative;">
                     <select id="daySelect" class="form-control bg-white border-0 fw-semibold">
                         <option value="All">Day</option>
                     </select>
                 </div>
-                <div class="form-group" style="width: 150px; position: relative;">
+                <div class="form-group fg-admin" style="width: 150px; position: relative;">
                     <select id="typeSelect" class="form-control bg-white border-0 fw-semibold">
                         <option value="All">All Loan</option>
                         <option value="BUCS">New Loan</option>
@@ -276,6 +312,26 @@
                 // Handle deny button click
                 console.log('Denied');
                 buttons.style.display = 'none';
+            });
+        });
+        // Get all "Add Status" buttons
+        var addStatusButtons = document.querySelectorAll('.btn-add-status');
+
+        // When a button is clicked, display the corresponding modal
+        addStatusButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var modal = document.getElementById('myModal');
+                modal.style.display = 'block';
+            });
+        });
+
+        // When the user clicks outside a modal, close it
+        window.addEventListener('click', function(event) {
+            addStatusButtons.forEach(function(button) {
+                var modal = document.getElementById('myModal');
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
             });
         });
     </script>
