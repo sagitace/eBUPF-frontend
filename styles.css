@@ -1081,4 +1081,11 @@ tbody tr:nth-child(odd) td {
 .application-details-box {
     border: #868686 1px solid;
     border-radius: 15px;
+    padding: 0 30px;
+}
+
+.appdetails-text {
+    font-size: 1.1rem;
+    color: #00638D;
+    font-weight: 600;
 }
