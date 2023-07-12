@@ -769,11 +769,12 @@ input.invalid {
 
 .pl-50 {
     font-size: 0.7rem;
-    border: 1px solid red;
+    border: 1px solid #EE3434;
     border-radius: 20px;
-    background-color: #ff8b8b;
+    background-color: #FEB3B3;
     padding: 0px 5px;
     margin-bottom: 25px;
+    color: #000000;
 }
 
 .pl-details {
