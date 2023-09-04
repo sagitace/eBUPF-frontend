@@ -1090,3 +1090,38 @@ tbody tr:nth-child(odd) td {
     color: #00638D;
     font-weight: 600;
 }
+
+
+/* for remittance */
+
+#remit-btn {
+    border-radius: 20px;
+}
+
+.text-add-payment {
+    color: #868686;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px 0 0 15px;
+}
+
+.apply-changes-btn {
+    border-radius: 10px;
+    background: #FF6F19;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.apply-changes-btn:hover {
+    background: #be4f0f;
+    color: white;
+}
+
+.text-remit-table-head {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: bold;
+}
